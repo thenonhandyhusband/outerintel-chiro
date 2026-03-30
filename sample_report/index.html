@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chiropractic Competitive Intelligence Report — Peak Performance Chiropractic | Outer Intel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Reset & Base ───────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent:     #D97706;
+      --accent-lt:  #FEF3C7;
+      --accent-mid: #F59E0B;
+      --navy:       #0D1B35;
+      --navy-mid:   #152747;
+      --navy-lt:    #1E3A6E;
+      --risk:       #DC2626;
+      --risk-lt:    #FEE2E2;
+      --risk-bar:   #F97316;
+      --flag-lt:    #FFF7ED;
+      --neutral:    #6B7280;
+      --border:     #E5E7EB;
+      --bg:         #FFFFFF;
+      --bg-soft:    #F9FAFB;
+      --text:       #111827;
+      --text-mid:   #374151;
+    }
+
+    html { font-size: 16px; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #F3F4F6;
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Layout wrapper ─────────────────────────────────────────── */
+    .report-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--bg);
+      box-shadow: 0 4px 32px rgba(13,27,53,0.12);
+    }
+
+    /* ── Back Link ──────────────────────────────────────────────── */
+    .back-bar {
+      background: var(--navy);
+      padding: 10px 32px;
+    }
+
+    .back-bar a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.65);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: color 0.15s;
+    }
+
+    .back-bar a:hover { color: var(--accent); }
+
+    /* ── Cover Banner ───────────────────────────────────────────── */
+    .cover {
+      background: var(--navy);
+      padding: 52px 48px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cover::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 320px; height: 320px;
+      border-radius: 50%;
+      background: rgba(217,119,6,0.07);
+      pointer-events: none;
+    }
+
+    .cover::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: -40px;
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.03);
+      pointer-events: none;
+    }
+
+    .logo-mark {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+      margin-bottom: 28px;
+      display: inline-block;
+    }
+
+    .logo-mark span { color: var(--accent); }
+
+    .cover-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    .cover h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.15rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      max-width: 560px;
+    }
+
+    .cover-practice {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 6px;
+    }
+
+    .cover-meta {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: 28px;
+    }
+
+    .cover-scope {
+      display: inline-block;
+      background: rgba(217,119,6,0.15);
+      border: 1px solid rgba(217,119,6,0.35);
+      border-radius: 4px;
+      padding: 8px 14px;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.75);
+      font-weight: 400;
+    }
+
+    .cover-scope strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* ── Report Body Padding ────────────────────────────────────── */
+    .report-body {
+      padding: 0 48px 64px;
+    }
+
+    /* ── Section Generic ────────────────────────────────────────── */
+    .section {
+      margin-top: 52px;
+    }
+
+    .section-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 20px;
+      line-height: 1.25;
+    }
+
+    .section-divider {
+      width: 48px;
+      height: 3px;
+      background: var(--accent);
+      margin-bottom: 24px;
+      border: none;
+    }
+
+    /* ── Executive Summary Cards ────────────────────────────────── */
+    .exec-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 4px;
+    }
+
+    .exec-card {
+      border-radius: 6px;
+      padding: 22px 20px;
+      border-top: 3px solid transparent;
+    }
+
+    .exec-card.opportunity {
+      background: var(--accent-lt);
+      border-top-color: var(--accent);
+    }
+
+    .exec-card.risk {
+      background: var(--risk-lt);
+      border-top-color: var(--risk);
+    }
+
+    .exec-card.win {
+      background: #F0FDF4;
+      border-top-color: #16A34A;
+    }
+
+    .exec-card-label {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .exec-card.opportunity .exec-card-label { color: #92400E; }
+    .exec-card.risk .exec-card-label { color: var(--risk); }
+    .exec-card.win .exec-card-label { color: #15803D; }
+
+    .exec-card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+
+    .exec-card.opportunity .exec-card-title { color: var(--navy); }
+    .exec-card.risk .exec-card-title { color: #991B1B; }
+    .exec-card.win .exec-card-title { color: #14532D; }
+
+    .exec-card p {
+      font-size: 0.82rem;
+      line-height: 1.55;
+    }
+
+    .exec-card.opportunity p { color: #78350F; }
+    .exec-card.risk p { color: #7F1D1D; }
+    .exec-card.win p { color: #14532D; }
+
+    /* ── Insight Callout ────────────────────────────────────────── */
+    .insight-box {
+      background: var(--navy);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 6px 6px 0;
+      padding: 18px 22px;
+      margin-top: 20px;
+    }
+
+    .insight-box-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .insight-box p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.6;
+    }
+
+    /* ── Bar Chart (CSS) ────────────────────────────────────────── */
+    .bar-chart {
+      margin-top: 8px;
+    }
+
+    .bar-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      gap: 14px;
+    }
+
+    .bar-label {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-mid);
+      min-width: 192px;
+      flex-shrink: 0;
+    }
+
+    .bar-label.yours {
+      color: var(--navy);
+      font-weight: 600;
+    }
+
+    .bar-track {
+      flex: 1;
+      background: #F3F4F6;
+      border-radius: 3px;
+      height: 26px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 3px;
+      background: #CBD5E1;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      transition: width 0s;
+    }
+
+    .bar-fill.amber { background: var(--accent); }
+    .bar-fill.yours-fill {
+      background: var(--navy-lt);
+    }
+
+    .bar-value {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #FFFFFF;
+      white-space: nowrap;
+    }
+
+    .bar-flag {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--risk);
+      background: var(--risk-lt);
+      border: 1px solid #FECACA;
+      border-radius: 3px;
+      padding: 2px 7px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .velocity-note {
+      margin-top: 16px;
+      font-size: 0.85rem;
+      color: var(--neutral);
+      border-top: 1px solid var(--border);
+      padding-top: 14px;
+    }
+
+    .velocity-note strong { color: var(--text); }
+
+    /* ── Sentiment Bars ─────────────────────────────────────────── */
+    .sentiment-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 4px;
+    }
+
+    .sentiment-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .sentiment-label {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-mid);
+      min-width: 210px;
+      flex-shrink: 0;
+    }
+
+    .sentiment-track {
+      flex: 1;
+      background: #F3F4F6;
+      border-radius: 20px;
+      height: 18px;
+      overflow: hidden;
+    }
+
+    .sentiment-fill {
+      height: 100%;
+      border-radius: 20px;
+      background: var(--accent);
+    }
+
+    .sentiment-fill.risk-bar { background: var(--risk-bar); }
+    .sentiment-fill.risk-low { background: var(--risk); }
+
+    .sentiment-pct {
+      font-size: 0.82rem;
+      font-weight: 600;
+      min-width: 42px;
+      text-align: right;
+      color: var(--text);
+      flex-shrink: 0;
+    }
+
+    .sentiment-flag {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--risk);
+      background: var(--risk-lt);
+      border: 1px solid #FECACA;
+      border-radius: 3px;
+      padding: 2px 7px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* ── Service Gap Table ──────────────────────────────────────── */
+    .gap-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.84rem;
+      margin-top: 4px;
+    }
+
+    .gap-table thead tr {
+      background: var(--navy);
+    }
+
+    .gap-table thead th {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    .gap-table thead th:first-child {
+      border-radius: 4px 0 0 0;
+      color: var(--accent);
+    }
+
+    .gap-table thead th:last-child { border-radius: 0 4px 0 0; }
+
+    .gap-table tbody tr:nth-child(even) { background: var(--bg-soft); }
+    .gap-table tbody tr:nth-child(odd)  { background: var(--bg); }
+    .gap-table tbody tr:hover { background: var(--accent-lt); transition: background 0.15s; }
+
+    .gap-table tbody td {
+      padding: 13px 16px;
+      vertical-align: top;
+      border-bottom: 1px solid var(--border);
+      line-height: 1.5;
+      color: var(--text-mid);
+    }
+
+    .gap-table tbody td:first-child {
+      font-weight: 600;
+      color: var(--navy);
+      font-size: 0.83rem;
+      white-space: nowrap;
+    }
+
+    .gap-table tbody td.opportunity-cell {
+      color: #065F46;
+      background: #F0FDF4;
+    }
+
+    .gap-table tbody tr:nth-child(even) td.opportunity-cell {
+      background: #DCFCE7;
+    }
+
+    /* ── Keyword Intelligence ───────────────────────────────────── */
+    .keyword-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 4px;
+    }
+
+    .keyword-col-header {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      padding: 8px 14px;
+      border-radius: 4px 4px 0 0;
+      margin-bottom: 0;
+    }
+
+    .keyword-col-header.positive {
+      background: var(--accent);
+      color: #FFFFFF;
+    }
+
+    .keyword-col-header.negative {
+      background: var(--risk);
+      color: #FFFFFF;
+    }
+
+    .keyword-list {
+      list-style: none;
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 4px 4px;
+      overflow: hidden;
+    }
+
+    .keyword-list li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.83rem;
+    }
+
+    .keyword-list li:last-child { border-bottom: none; }
+
+    .keyword-list li:nth-child(even) { background: var(--bg-soft); }
+
+    .keyword-phrase {
+      font-style: italic;
+      color: var(--text-mid);
+    }
+
+    .keyword-count {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 12px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-left: 12px;
+    }
+
+    .keyword-count.pos {
+      background: var(--accent-lt);
+      color: #92400E;
+    }
+
+    .keyword-count.neg {
+      background: var(--risk-lt);
+      color: var(--risk);
+    }
+
+    /* ── Action Checklist ───────────────────────────────────────── */
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 4px;
+    }
+
+    .checklist-col {
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--accent);
+      border-radius: 0 0 6px 6px;
+      overflow: hidden;
+    }
+
+    .checklist-col.risk-col { border-top-color: var(--risk-bar); }
+    .checklist-col.strategic-col { border-top-color: var(--navy-lt); }
+
+    .checklist-col-header {
+      background: var(--bg-soft);
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .checklist-col-header h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    .checklist-col-header .time-badge {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 0.68rem;
+      color: var(--neutral);
+      font-weight: 400;
+    }
+
+    .checklist-items {
+      list-style: none;
+      padding: 0;
+    }
+
+    .checklist-items li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 11px 16px;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.81rem;
+      color: var(--text-mid);
+      line-height: 1.5;
+    }
+
+    .checklist-items li:last-child { border-bottom: none; }
+
+    .checklist-items li:nth-child(even) { background: var(--bg-soft); }
+
+    .checkbox {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      min-width: 16px;
+      border: 2px solid var(--border);
+      border-radius: 3px;
+      margin-top: 1px;
+      background: #fff;
+    }
+
+    /* ── Footer ─────────────────────────────────────────────────── */
+    .report-footer {
+      background: var(--navy);
+      padding: 36px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .footer-left .footer-logo {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+
+    .footer-left .footer-logo span { color: var(--accent); }
+
+    .footer-left .source-note {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.4);
+      max-width: 340px;
+      line-height: 1.5;
+    }
+
+    .footer-cta {
+      display: inline-block;
+      background: var(--accent);
+      color: #FFFFFF;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 13px 24px;
+      border-radius: 5px;
+      white-space: nowrap;
+      transition: background 0.15s;
+      flex-shrink: 0;
+    }
+
+    .footer-cta:hover { background: var(--accent-mid); }
+
+    /* ── Print ──────────────────────────────────────────────────── */
+    @media print {
+      body { background: #fff; }
+      .report-wrap { box-shadow: none; max-width: 100%; }
+      .back-bar { display: none; }
+      .footer-cta { display: none; }
+      .section { page-break-inside: avoid; }
+      .checklist-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    /* ── Responsive ─────────────────────────────────────────────── */
+    @media (max-width: 720px) {
+      .cover { padding: 36px 24px 32px; }
+      .cover h1 { font-size: 1.6rem; }
+      .report-body { padding: 0 24px 48px; }
+      .exec-grid { grid-template-columns: 1fr; }
+      .keyword-grid { grid-template-columns: 1fr; }
+      .checklist-grid { grid-template-columns: 1fr; }
+      .bar-label { min-width: 140px; font-size: 0.76rem; }
+      .sentiment-label { min-width: 160px; }
+      .report-footer { flex-direction: column; padding: 28px 24px; }
+      .gap-table { font-size: 0.78rem; }
+      .gap-table thead th, .gap-table tbody td { padding: 10px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="report-wrap">
+
+  <!-- Back to site -->
+  <div class="back-bar">
+    <a href="https://chiro.outerintel.com">&#8592; Back to Chiropractic</a>
+  </div>
+
+  <!-- ── Cover Banner ──────────────────────────────────────────── -->
+  <header class="cover" role="banner">
+    <div class="logo-mark">Outer<span>Intel</span></div>
+    <div class="cover-eyebrow">Competitive Intelligence Report</div>
+    <h1>Chiropractic Competitive Intelligence Report</h1>
+    <p class="cover-practice">Peak Performance Chiropractic &mdash; Denver, CO</p>
+    <p class="cover-meta">Q1 2025 &middot; Prepared by Outer Intel</p>
+    <div class="cover-scope">
+      Analyzing <strong>1,124 competitor reviews</strong> across <strong>7 practices</strong> within <strong>10 miles</strong>
+    </div>
+  </header>
+
+  <!-- ── Report Body ───────────────────────────────────────────── -->
+  <main class="report-body" role="main">
+
+    <!-- Executive Summary -->
+    <section class="section" aria-labelledby="exec-heading">
+      <div class="section-label">Overview</div>
+      <h2 id="exec-heading">Executive Summary</h2>
+      <hr class="section-divider" aria-hidden="true" />
+
+      <div class="exec-grid">
+        <div class="exec-card opportunity" role="region" aria-label="Opportunity Score">
+          <div class="exec-card-label">Opportunity Score</div>
+          <div class="exec-card-title">81 / 100</div>
+          <p>High competitive gap &mdash; your top competitor is underperforming on patient communication, your core strength.</p>
+        </div>
+
+        <div class="exec-card risk" role="region" aria-label="Top Risk">
+          <div class="exec-card-label">Top Risk</div>
+          <div class="exec-card-title">Outcome Transparency</div>
+          <p>38% of 2-star reviews across all competitors cite lack of progress updates. Patients want to feel progress.</p>
+        </div>
+
+        <div class="exec-card win" role="region" aria-label="Quick Win">
+          <div class="exec-card-label">Quick Win</div>
+          <div class="exec-card-title">Same-Day Appointments</div>
+          <p>Only 1 competitor offers same-day booking and prominently mentions it. Mention yours if you have it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: Review Velocity -->
+    <section class="section" aria-labelledby="velocity-heading">
+      <div class="section-label">Section 1</div>
+      <h2 id="velocity-heading">Review Velocity &mdash; Last 90 Days</h2>
+      <hr class="section-divider" aria-hidden="true" />
+
+      <div class="bar-chart" role="list" aria-label="Review counts by practice, last 90 days">
+
+        <div class="bar-row" role="listitem">
+          <span class="bar-label">SpinePath Denver</span>
+          <div class="bar-track" aria-label="41 reviews">
+            <div class="bar-fill amber" style="width:100%"><span class="bar-value">41</span></div>
+          </div>
+        </div>
+
+        <div class="bar-row" role="listitem">
+          <span class="bar-label">BackInAction Chiro</span>
+          <div class="bar-track" aria-label="33 reviews">
+            <div class="bar-fill" style="width:80.5%"><span class="bar-value">33</span></div>
+          </div>
+        </div>
+
+        <div class="bar-row" role="listitem">
+          <span class="bar-label">Mile High Chiro</span>
+          <div class="bar-track" aria-label="27 reviews">
+            <div class="bar-fill" style="width:65.9%"><span class="bar-value">27</span></div>
+          </div>
+        </div>
+
+        <div class="bar-row" role="listitem">
+          <span class="bar-label yours">Peak Performance (YOU)</span>
+          <div class="bar-track" aria-label="18 reviews — flagged">
+            <div class="bar-fill yours-fill" style="width:43.9%"><span class="bar-value">18</span></div>
+          </div>
+          <span class="bar-flag" aria-label="Flagged — below market pace">&#9650; Gap</span>
+        </div>
+
+        <div class="bar-row" role="listitem">
+          <span class="bar-label">Active Life Chiro</span>
+          <div class="bar-track" aria-label="15 reviews">
+            <div class="bar-fill" style="width:36.6%"><span class="bar-value">15</span></div>
+          </div>
+        </div>
+
+        <div class="bar-row" role="listitem">
+          <span class="bar-label">Denver Spine Center</span>
+          <div class="bar-track" aria-label="12 reviews">
+            <div class="bar-fill" style="width:29.3%"><span class="bar-value">12</span></div>
+          </div>
+        </div>
+
+        <div class="bar-row" role="listitem">
+          <span class="bar-label">Align Chiropractic</span>
+          <div class="bar-track" aria-label="9 reviews">
+            <div class="bar-fill" style="width:22%"><span class="bar-value">9</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="velocity-note"><strong>Velocity gap:</strong> SpinePath Denver is outpacing you <strong>2.3&times;</strong> in review acquisition over the past 90 days.</p>
+
+      <div class="insight-box" role="note" aria-label="Insight">
+        <div class="insight-box-label">Insight</div>
+        <p>SpinePath&rsquo;s velocity spike coincides with their new text-based review request they launched in January. A similar system could close this gap within <strong>60 days</strong>.</p>
+      </div>
+    </section>
+
+    <!-- Section 2: Sentiment by Category -->
+    <section class="section" aria-labelledby="sentiment-heading">
+      <div class="section-label">Section 2</div>
+      <h2 id="sentiment-heading">Sentiment by Category</h2>
+      <hr class="section-divider" aria-hidden="true" />
+
+      <div class="sentiment-grid" role="list" aria-label="Positive sentiment percentages by category">
+
+        <div class="sentiment-row" role="listitem">
+          <span class="sentiment-label">Adjustment Effectiveness</span>
+          <div class="sentiment-track" aria-label="82% positive">
+            <div class="sentiment-fill" style="width:82%"></div>
+          </div>
+          <span class="sentiment-pct">82%</span>
+        </div>
+
+        <div class="sentiment-row" role="listitem">
+          <span class="sentiment-label">Appointment Availability</span>
+          <div class="sentiment-track" aria-label="49% positive — flagged">
+            <div class="sentiment-fill risk-bar" style="width:49%"></div>
+          </div>
+          <span class="sentiment-pct">49%</span>
+          <span class="sentiment-flag" aria-label="Flagged">&#9650; Low</span>
+        </div>
+
+        <div class="sentiment-row" role="listitem">
+          <span class="sentiment-label">Wait Times</span>
+          <div class="sentiment-track" aria-label="44% positive — flagged">
+            <div class="sentiment-fill risk-low" style="width:44%"></div>
+          </div>
+          <span class="sentiment-pct">44%</span>
+          <span class="sentiment-flag" aria-label="Flagged">&#9650; Low</span>
+        </div>
+
+        <div class="sentiment-row" role="listitem">
+          <span class="sentiment-label">Staff Communication</span>
+          <div class="sentiment-track" aria-label="73% positive">
+            <div class="sentiment-fill" style="width:73%"></div>
+          </div>
+          <span class="sentiment-pct">73%</span>
+        </div>
+
+        <div class="sentiment-row" role="listitem">
+          <span class="sentiment-label">Treatment Plan Clarity</span>
+          <div class="sentiment-track" aria-label="56% positive — moderate">
+            <div class="sentiment-fill" style="width:56%"></div>
+          </div>
+          <span class="sentiment-pct">56%</span>
+        </div>
+
+        <div class="sentiment-row" role="listitem">
+          <span class="sentiment-label">Outcome Progress Updates</span>
+          <div class="sentiment-track" aria-label="41% positive — flagged">
+            <div class="sentiment-fill risk-low" style="width:41%"></div>
+          </div>
+          <span class="sentiment-pct">41%</span>
+          <span class="sentiment-flag" aria-label="Flagged">&#9650; Low</span>
+        </div>
+
+      </div>
+
+      <div class="insight-box" role="note" aria-label="Insight">
+        <div class="insight-box-label">Insight</div>
+        <p>Outcome communication is the biggest gap across all competitors. Patients want to know their progress. A weekly check-in protocol could drive measurable review improvement across all practices in this market &mdash; be the first to own it.</p>
+      </div>
+    </section>
+
+    <!-- Section 3: Service Gap Analysis -->
+    <section class="section" aria-labelledby="gap-heading">
+      <div class="section-label">Section 3</div>
+      <h2 id="gap-heading">Service Gap Analysis</h2>
+      <hr class="section-divider" aria-hidden="true" />
+
+      <table class="gap-table" aria-label="Service gap analysis by condition">
+        <thead>
+          <tr>
+            <th scope="col">Service / Condition</th>
+            <th scope="col">Competitor Strength</th>
+            <th scope="col">Your Opportunity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sports Injuries</td>
+            <td>SpinePath dominating with athlete-specific messaging</td>
+            <td class="opportunity-cell">No sports-specific positioning in your current reviews</td>
+          </tr>
+          <tr>
+            <td>Lower Back Pain</td>
+            <td>Table stakes &mdash; all practices strong here</td>
+            <td class="opportunity-cell">Differentiate on speed of relief timeline and documentation</td>
+          </tr>
+          <tr>
+            <td>Neck / Upper Back</td>
+            <td>BackInAction has 15 neck-pain specific 5-stars in 90 days</td>
+            <td class="opportunity-cell">Opportunity to target desk-worker and remote worker demographic</td>
+          </tr>
+          <tr>
+            <td>Headache / Migraine</td>
+            <td>Major gap &mdash; almost no competitor mentions this</td>
+            <td class="opportunity-cell">High-value specialty positioning &mdash; few are claiming this</td>
+          </tr>
+          <tr>
+            <td>Pediatric Chiro</td>
+            <td>Active Life Chiro mentions this, moderate sentiment</td>
+            <td class="opportunity-cell">Neutral territory &mdash; compete or ignore based on your goals</td>
+          </tr>
+          <tr>
+            <td>Prenatal Chiro</td>
+            <td>No competitor has strong prenatal positioning</td>
+            <td class="opportunity-cell">Open territory &mdash; if you offer this, it could be a category-winning move</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 4: Keyword Intelligence -->
+    <section class="section" aria-labelledby="keywords-heading">
+      <div class="section-label">Section 4</div>
+      <h2 id="keywords-heading">Keyword Intelligence</h2>
+      <hr class="section-divider" aria-hidden="true" />
+
+      <div class="keyword-grid">
+
+        <div>
+          <div class="keyword-col-header positive" aria-label="5-star review phrases">5-Star Phrases</div>
+          <ul class="keyword-list" aria-label="Top phrases in 5-star reviews">
+            <li>
+              <span class="keyword-phrase">&ldquo;felt relief immediately&rdquo;</span>
+              <span class="keyword-count pos">52 mentions</span>
+            </li>
+            <li>
+              <span class="keyword-phrase">&ldquo;actually listened to me&rdquo;</span>
+              <span class="keyword-count pos">41 mentions</span>
+            </li>
+            <li>
+              <span class="keyword-phrase">&ldquo;explained the treatment plan&rdquo;</span>
+              <span class="keyword-count pos">33 mentions</span>
+            </li>
+            <li>
+              <span class="keyword-phrase">&ldquo;same-day appointment&rdquo;</span>
+              <span class="keyword-count pos">28 mentions</span>
+            </li>
+            <li>
+              <span class="keyword-phrase">&ldquo;best adjustment I&rsquo;ve had&rdquo;</span>
+              <span class="keyword-count pos">21 mentions</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="keyword-col-header negative" aria-label="1-star review phrases">1-Star Phrases</div>
+          <ul class="keyword-list" aria-label="Top phrases in 1-star reviews">
+            <li>
+              <span class="keyword-phrase">&ldquo;didn&rsquo;t feel any improvement&rdquo;</span>
+              <span class="keyword-count neg">38 mentions</span>
+            </li>
+            <li>
+              <span class="keyword-phrase">&ldquo;waited too long&rdquo;</span>
+              <span class="keyword-count neg">29 mentions</span>
+            </li>
+            <li>
+              <span class="keyword-phrase">&ldquo;upselled me every visit&rdquo;</span>
+              <span class="keyword-count neg">24 mentions</span>
+            </li>
+            <li>
+              <span class="keyword-phrase">&ldquo;couldn&rsquo;t get an appointment&rdquo;</span>
+              <span class="keyword-count neg">19 mentions</span>
+            </li>
+            <li>
+              <span class="keyword-phrase">&ldquo;no progress updates&rdquo;</span>
+              <span class="keyword-count neg">17 mentions</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="insight-box" role="note" aria-label="Insight" style="margin-top:20px">
+        <div class="insight-box-label">Insight</div>
+        <p>The &ldquo;upsell&rdquo; complaint is significant &mdash; 24 mentions suggests competitors are creating patient distrust with aggressive care plan pitches. If you take a transparent, outcome-first approach, lean into that in your messaging.</p>
+      </div>
+    </section>
+
+    <!-- Section 5: 90-Day Action Checklist -->
+    <section class="section" aria-labelledby="checklist-heading">
+      <div class="section-label">Section 5</div>
+      <h2 id="checklist-heading">90-Day Action Checklist</h2>
+      <hr class="section-divider" aria-hidden="true" />
+
+      <div class="checklist-grid">
+
+        <div class="checklist-col" role="region" aria-label="Quick wins checklist">
+          <div class="checklist-col-header">
+            <h3>Quick Wins</h3>
+            <span class="time-badge">Week 1&ndash;2</span>
+          </div>
+          <ul class="checklist-items">
+            <li>
+              <span class="checkbox" aria-hidden="true"></span>
+              Add &ldquo;sports injury&rdquo; and &ldquo;same-day appointments&rdquo; to Google Business Profile
+            </li>
+            <li>
+              <span class="checkbox" aria-hidden="true"></span>
+              Create a post-adjustment check-in protocol &mdash; even a simple 1-week follow-up text can generate outcome documentation
+            </li>
+            <li>
+              <span class="checkbox" aria-hidden="true"></span>
+              Respond to all Google reviews within 24 hours &mdash; competitors average 4+ days
+            </li>
+          </ul>
+        </div>
+
+        <div class="checklist-col risk-col" role="region" aria-label="Medium-term checklist">
+          <div class="checklist-col-header">
+            <h3>Medium-Term</h3>
+            <span class="time-badge">Month 1&ndash;2</span>
+          </div>
+          <ul class="checklist-items">
+            <li>
+              <span class="checkbox" aria-hidden="true"></span>
+              Launch SMS review request after 3rd visit &mdash; this is what closed SpinePath&rsquo;s velocity gap
+            </li>
+            <li>
+              <span class="checkbox" aria-hidden="true"></span>
+              Build a dedicated &ldquo;Headache &amp; Migraine Relief&rdquo; page &mdash; almost no competitor is targeting this
+            </li>
+            <li>
+              <span class="checkbox" aria-hidden="true"></span>
+              Brief front desk on the #1 churn signal: patients who don&rsquo;t feel progress by visit 4 &mdash; create an early check-in script
+            </li>
+          </ul>
+        </div>
+
+        <div class="checklist-col strategic-col" role="region" aria-label="Strategic checklist">
+          <div class="checklist-col-header">
+            <h3>Strategic</h3>
+            <span class="time-badge">Month 2&ndash;3</span>
+          </div>
+          <ul class="checklist-items">
+            <li>
+              <span class="checkbox" aria-hidden="true"></span>
+              Test athlete-facing content (blog, social) &mdash; SpinePath is winning the sports injury segment
+            </li>
+            <li>
+              <span class="checkbox" aria-hidden="true"></span>
+              If you offer prenatal care, create a dedicated landing page &mdash; this is unclaimed territory in your market
+            </li>
+            <li>
+              <span class="checkbox" aria-hidden="true"></span>
+              Audit your care plan presentation &mdash; if it feels like upselling, redesign the framing around outcome milestones
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ────────────────────────────────────────────────── -->
+  <footer class="report-footer" role="contentinfo">
+    <div class="footer-left">
+      <div class="footer-logo">Outer<span>Intel</span></div>
+      <p class="source-note">
+        Source data: Google Business Profile reviews collected Q1 2025. Analysis covers 1,124 reviews across 7 chiropractic practices within a 10-mile radius of Denver, CO. All competitor names are based on public review data.
+      </p>
+    </div>
+    <a href="https://chiro.outerintel.com" class="footer-cta">Get My Free Chiro Audit &rarr;</a>
+  </footer>
+
+</div>
+</body>
+</html>
